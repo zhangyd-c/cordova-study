@@ -1,15 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.zyd.cordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <feature name="Whitelist">
-        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
-        <param name="onload" value="true" />
-    </feature>
     <name>cordova-study</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="yadong.zhang0415@gmail.com" href="https://www.zhyd.me">
+        Yadong Zhang
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -21,4 +17,18 @@
     <allow-intent href="geo:*" />
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
+    <preference name="loadUrlTimeoutValue" value="60000" />
+    <chcp>
+        <auto-download enabled="true" />
+        <auto-install enabled="true" />
+        <config-file url="http://xx/hot-update-app/zyd-test/chcp.json" />
+    </chcp>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="HotCodePush">
+        <param name="android-package" value="com.nordnetab.chcp.main.HotCodePushPlugin" />
+        <param name="onload" value="true" />
+    </feature>
 </widget>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
@@ -10,15 +9,21 @@
     <script type="text/javascript" src="js/biz.common.js"></script>
     <!--for cordova package app-->
     <script type="text/javascript" src="cordova.js"></script>
-
 </head>
 
 <body class="android" style="text-align: center;">
-    <img src="img/logo.png" alt="" width="200px" style="margin: 0 auto;"><br>
-    <ul>
-        <li><button class="update" style="margin: 0 auto;">手动更新APP</button></li>
-    </ul>
-    <ul id="updateLog"></ul>
+<img src="img/logo.png" alt="" width="200px" style="margin: 0 auto;"><br>
+<ul>
+    <li>
+        <button class="update" style="margin: 0 auto;">手动更新APP</button>
+    </li>
+    <li>我新添加的内容，测试Cordova热更新</li>
+    <li>我新添加的内容，测试Cordova热更新</li>
+</ul>
 </body>
+<script type="text/javascript">
+    zyd.bindUpdate.init();
+    // zyd.bindAutoUpdate.init();
+</script>
 
 </html>

@@ -1,0 +1,74 @@
+{
+  "_from": "cordova-hot-code-push-plugin",
+  "_id": "cordova-hot-code-push-plugin@1.5.3",
+  "_inBundle": false,
+  "_integrity": "sha1-s47gY+8koU3sQMEj8r75AKiHw0I=",
+  "_location": "/cordova-hot-code-push-plugin",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-hot-code-push-plugin",
+    "name": "cordova-hot-code-push-plugin",
+    "escapedName": "cordova-hot-code-push-plugin",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-hot-code-push-plugin/-/cordova-hot-code-push-plugin-1.5.3.tgz",
+  "_shasum": "b38ee063ef24a14dec40c123f2bef900a887c342",
+  "_spec": "cordova-hot-code-push-plugin",
+  "_where": "D:\\zhyd-project\\app\\cordova-study",
+  "author": {
+    "name": "Nikolay Demyankov for Nordnet Bank AB"
+  },
+  "bugs": {
+    "url": "https://github.com/nordnet/cordova-hot-code-push/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-hot-code-push-plugin",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {
+    "xml2js": "^0.4"
+  },
+  "deprecated": false,
+  "description": "Cordova plugin to perform code updates on the fly",
+  "engines": [
+    {
+      "name": "cordova-android",
+      "version": ">=4"
+    },
+    {
+      "name": "cordova-plugman",
+      "version": ">=4.2.0"
+    }
+  ],
+  "homepage": "https://github.com/nordnet/cordova-hot-code-push#readme",
+  "keywords": [
+    "cordova",
+    "nordnet",
+    "mobile",
+    "code",
+    "update",
+    "push",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "name": "cordova-hot-code-push-plugin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nordnet/cordova-hot-code-push.git"
+  },
+  "version": "1.5.3"
+}

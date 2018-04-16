@@ -1,69 +1,49 @@
-$(function(){
-    $(".bdapp").click(function(){
-        alert("打开百度地图");
-        var scheme = 'com.baidu.BaiduMap';
-//        var scheme = 'com.abb.ijia';
-        appAvailability.check(
-            scheme,       // URI Scheme or Package Name
-            function() {  // Success callback
-                alert(scheme + ' is available :)');
-                var sApp = startApp.set({ /* params */
-                  "action":"ACTION_MAIN",
-          　　　　"category":"CATEGORY_DEFAULT",
-          　　　　"type":"text/css",
-          　　　　"package":"com.baidu.BaiduMap",
-          　　　　"uri":"file://data/index.html",
-          　　　　"flags":["FLAG_ACTIVITY_CLEAR_TOP","FLAG_ACTIVITY_CLEAR_TASK"],
-          　　　　// "component": ["com.android.GoBallistic","com.android.GoBallistic.Activity"],
-          　　　　"intentstart":"startActivity",
-                }, { /* extras */
-                  "EXTRA_STREAM":"extraValue1",
-                  "extraKey2":"extraValue2"
-                });
-                sApp.start(function() { /* success */
-                  alert("已打开APP");
-                }, function(error) { /* fail */
-                  alert("打开失败" + error);
-                });
-
-            },
-            function() {  // Error callback
-                alert(scheme + ' is not available :(');
-                window.open("market://search?q=com.baidu.BaiduMap")
-            }
-        );
-    });
-    $(".update").click(function(){
-        //说明：这里的使用了Framework7
-        chcp.fetchUpdate(function(error, data) {
-            if(!error) {
-                alert("有更新");
-                chcp.installUpdate(function(error) {
-                   alert("更新完成");
-                })
-            } else {
-                alert("当前是最新版本");
-            }
-        })
-    });
-
-    function writeLog(message){
-        var $updateLog = $("#updateLog");
-        $updateLog.append("<li>"+ new Date() + " 自动更新提示：当前是最新版本"+"</li>")
+/**
+ * https://www.zhyd.me
+ * @author yadong.zhang email:yadong.zhang0415(a)gmail.com
+ * @version 1.0
+ * @date 2018/4/16 15:36
+ * @since 1.0
+ */
+var zyd = window.zyd || {
+    // ...
+}
+zyd.bindUpdate = {
+    init : function () {
+        $(".update").click(function(){
+            //说明：这里的使用了Framework7
+            chcp.fetchUpdate(function(error, data) {
+                if(!error) {
+                    alert("有更新");
+                    chcp.installUpdate(function(error) {
+                       alert("更新完成");
+                    })
+                } else {
+                    alert("当前是最新版本");
+                }
+            })
+        });
     }
+}
 
-    /*setInterval(function(){
-        var $updateLog = $("#updateLog");
-        //说明：这里的使用了Framework7
-        chcp.fetchUpdate(function(error, data) {
-            if(!error) {
-                alert("自动更新提示：有更新");
-                chcp.installUpdate(function(error) {
-                   alert("自动更新提示：更新完成");
-                })
-            } else {
-                $updateLog.append("<li>"+ new Date() + " 自动更新提示：当前是最新版本"+"</li>")
-            }
-        })
-    }, 60000)*/
-});
+zyd.bindAutoUpdate = {
+   init : function () {
+       if (window.chcp) {
+           alert("支持chcp");
+           setInterval(function(){
+               chcp.fetchUpdate(function(error, data) {
+                   if(!error) {
+                       alert("自动更新提示：有更新");
+                       chcp.installUpdate(function(error) {
+                           console.log("自动更新提示：更新完成");
+                       })
+                   } else {
+                       alert("自动更新提示：当前是最新版本");
+                   }
+               })
+           }, 5000)
+       } else{
+           alert("暂不支持chcp");
+       }
+   }
+};

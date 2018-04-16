@@ -1,0 +1,54 @@
+[
+  {
+    "file": "cordova_plugins.js",
+    "hash": "600c769883f930fb181b13fd0781869e"
+  },
+  {
+    "file": "cordova-js-src/android/nativeapiprovider.js",
+    "hash": "035f17302807fd50b779d529b2fe70e6"
+  },
+  {
+    "file": "cordova-js-src/android/promptbasednativeapi.js",
+    "hash": "f4b029f0e91729c970ff421b8f9bd22e"
+  },
+  {
+    "file": "cordova-js-src/exec.js",
+    "hash": "4d368f4918f938b17fad3f819bdda568"
+  },
+  {
+    "file": "cordova-js-src/platform.js",
+    "hash": "6e1fac8e69e82cb27178bb5a01f1d36c"
+  },
+  {
+    "file": "cordova-js-src/plugin/android/app.js",
+    "hash": "58b79c9693166d44fc65d57979fcdf28"
+  },
+  {
+    "file": "cordova.js",
+    "hash": "891b57e6180dd5130770be6af740a98b"
+  },
+  {
+    "file": "css/index.css",
+    "hash": "e46d9a1c456a9c913ca10f3c16d50000"
+  },
+  {
+    "file": "img/logo.png",
+    "hash": "7e34c95ac701f8cd9f793586b9df2156"
+  },
+  {
+    "file": "index.html",
+    "hash": "8ec08ce8a6b41576e35fd6bcbab8c0f2"
+  },
+  {
+    "file": "js/biz.common.js",
+    "hash": "5541180c5cd1bdcf4fa5f7661c876953"
+  },
+  {
+    "file": "js/index.js",
+    "hash": "b144c071205225b243caacc5b550f592"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/www/chcp.js",
+    "hash": "0beaa97dfe7d1183b7c4736ad5f2bbb2"
+  }
+]

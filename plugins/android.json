@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.zyd.cordova"
+    },
+    "cordova-hot-code-push-plugin": {
+      "PACKAGE_NAME": "com.zyd.cordova"
     }
   },
   "dependent_plugins": {}
