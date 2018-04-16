@@ -14,7 +14,27 @@ Cordova学习记录，Cordova插件的使用，热更新、media、device、集�
 
 `config.xml`：主要是cordova的一些配置，比如：项目使用了哪些插件、应用图标icon和启动页面
 
+### 常用命令
 
+```html
+# 创建Cordova项目
+cordova create [projectName] [packageName]
+# 添加平台
+cordova platform add android
+cordova platform add ios
+# 移除android平台
+cordova platform rm android
+# 查看已添加的平台
+cordova platform ls
+# 添加插件
+cordova plugin add [plugin-full-name]
+# 删除插件
+cordova plugin rm [plugin-full-name]
+# 查看已添加的插件
+cordova plugin ls
+# 打包cordova项目到Android平台
+cordova build android
+```
 
 ### 开源协议
 
