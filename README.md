@@ -7,7 +7,7 @@ Cordova学习记录，Cordova插件的使用，热更新、media、device、集�
 `platforms`：平台目录，各自的平台代码就放在这里，可以放一下平台专属的代码
 `plugins`：Cordova插件目录，安装的插件会放在这里，cordova提供的原生API也是以插件的形式提供的
 `www`：源代码目录。在`cordova prepare`的时候会被copy到各个平台工程的`assets\www`目录中
-`config.xml`：主要是cordova的一些配置，比如：项目使用了哪些插件、应用图标icon和启动页面
+`config.xml`：主要是cordova的一些配置，比如：项目使用了哪些插件、应用图标icon和启动页面    
 
 
 ### 开源协议
