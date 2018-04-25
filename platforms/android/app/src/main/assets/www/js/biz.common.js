@@ -47,3 +47,44 @@ zyd.bindAutoUpdate = {
        }
    }
 };
+
+zyd.notification = {
+   init : function () {
+       if (cordova.plugins && cordova.plugins.notification) {
+            var look = false;
+            setInterval(function(){
+                if(!look){
+                    cordova.plugins.notification.local.schedule({
+                        id: Math.random(),
+                        title: '会议通知',
+                        text: '今天下午17点30分 \n塔1C座2306室-会议室\n开年终会议... ',
+                        foreground: true,
+                        actions: [
+                            { id: 'yes', title: '确认查看' },
+                            { id: 'no',  title: '忽略' }
+                        ]
+                  });
+                  look = true;
+                  cordova.plugins.notification.local.on('yes', function (notification, eopts) {
+                      look = false;
+                      for(var i in eopts){
+                       console.log(i + "==" + eopts[i]);
+                      }
+                  });
+
+                  cordova.plugins.notification.local.on('no', function (notification, eopts) {
+                      look = false;
+                  });
+   //               cordova.plugins.notification.local.on('click', function(notification){
+   //                  look = false;
+   //                  alert(notification.data+",messageId:"+notification.data.meetingId);
+   //              });
+                }else{
+                    console.log("有未读的消息,暂不现实通知");
+                }
+            }, 5000);
+       } else{
+           alert("暂不支持notification");
+       }
+   }
+};

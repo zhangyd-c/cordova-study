@@ -36,6 +36,13 @@ cordova plugin ls
 cordova build android
 ```
 
+### 项目中集成的插件
+1. cordova-plugin-whitelist 1.3.3  白名单
+2. cordova-hot-code-push-plugin 1.5.3  热更新
+3. cordova-plugin-device 2.0.2 "Device"  获取设备信息
+4. cordova-plugin-local-notification 0.9.0-beta.2 "LocalNotification" 本地通知
+5. cordova-plugin-badge 0.8.7 "Badge" 未读消息数徽章显示
+
 ### 开源协议
 
 [MIT](https://gitee.com/yadong.zhang/DBlog/blob/master/LICENSE)

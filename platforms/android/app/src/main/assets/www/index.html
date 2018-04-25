@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <title>Cordova学习-测试页面</title>
+    <link rel="stylesheet" href="css/custom.css">
     <!--Inject JS  -->
     <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-    <script type="text/javascript" src="js/biz.common.js"></script>
     <!--for cordova package app-->
     <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/biz.common.js"></script>
+    <script type="text/javascript">
+        cordova.plugins.notification.local.schedule({
+            title: '通知',
+            text: '您当前位于首页',
+            foreground: true
+        });
+    </script>
 </head>
 
 <body class="android" style="text-align: center;">
 <img src="img/logo.png" alt="" width="200px" style="margin: 0 auto;"><br>
+<strong>点击查看测试页面</strong>
 <ul>
-    <li>
-        <button class="update" style="margin: 0 auto;">手动更新APP</button>
-    </li>
-    <li>我新添加的内容，测试Cordova热更新</li>
-    <li>我新添加的内容，测试Cordova热更新</li>
+    <li><a href="tpl/chcp.html">热更新</a></li>
+    <li><a href="tpl/notification.html">消息通知</a></li>
 </ul>
 </body>
-<script type="text/javascript">
-    zyd.bindUpdate.init();
-    // zyd.bindAutoUpdate.init();
-</script>
-
 </html>

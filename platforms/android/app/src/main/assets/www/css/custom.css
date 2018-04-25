@@ -1,0 +1,8 @@
+ul{
+    list-style: none;
+}
+ul > li {
+    height: 10px;
+    line-height: 10px;
+    padding: 10px;
+}

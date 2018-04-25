@@ -1,7 +1,7 @@
 [
   {
     "file": "cordova_plugins.js",
-    "hash": "600c769883f930fb181b13fd0781869e"
+    "hash": "b4127322836c3d836850916c9e0d42b6"
   },
   {
     "file": "cordova-js-src/android/nativeapiprovider.js",
@@ -28,6 +28,10 @@
     "hash": "891b57e6180dd5130770be6af740a98b"
   },
   {
+    "file": "css/custom.css",
+    "hash": "220c046ae924c9cb499d9fda444c67b7"
+  },
+  {
     "file": "css/index.css",
     "hash": "e46d9a1c456a9c913ca10f3c16d50000"
   },
@@ -37,11 +41,11 @@
   },
   {
     "file": "index.html",
-    "hash": "8ec08ce8a6b41576e35fd6bcbab8c0f2"
+    "hash": "2ebd2714804362ac8ece15ab3d6ff20c"
   },
   {
     "file": "js/biz.common.js",
-    "hash": "5541180c5cd1bdcf4fa5f7661c876953"
+    "hash": "0f8077affbc7fc2f3fc69935f264d058"
   },
   {
     "file": "js/index.js",
@@ -50,5 +54,33 @@
   {
     "file": "plugins/cordova-hot-code-push-plugin/www/chcp.js",
     "hash": "0beaa97dfe7d1183b7c4736ad5f2bbb2"
+  },
+  {
+    "file": "plugins/cordova-plugin-badge/www/badge.js",
+    "hash": "f884db0ad9a4f35bca5526d1c1bc2f8f"
+  },
+  {
+    "file": "plugins/cordova-plugin-device/www/device.js",
+    "hash": "59e5d2111d51b0eb19aee309a4dbc1d5"
+  },
+  {
+    "file": "plugins/cordova-plugin-local-notification/www/local-notification-core.js",
+    "hash": "78b09c10738563f31c430d6156a32ab0"
+  },
+  {
+    "file": "plugins/cordova-plugin-local-notification/www/local-notification-util.js",
+    "hash": "c581b9a6ba42206a8667e3d8e86ba049"
+  },
+  {
+    "file": "plugins/cordova-plugin-local-notification/www/local-notification.js",
+    "hash": "6295e281a0ddb299d4ced55a6cf7a063"
+  },
+  {
+    "file": "tpl/chcp.html",
+    "hash": "357a01e1a2d1f4294e851e6df356c682"
+  },
+  {
+    "file": "tpl/notification.html",
+    "hash": "5ea0694978462d74ef3a262c2cd8ec70"
   }
 ]

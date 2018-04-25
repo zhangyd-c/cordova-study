@@ -25,4 +25,5 @@
     </platform>
     <engine name="android" spec="^7.0.0" />
     <plugin name="cordova-hot-code-push-plugin" spec="cordova-hot-code-push-plugin" />
+    <plugin name="cordova-plugin-local-notification" spec="cordova-plugin-local-notification" />
 </widget>

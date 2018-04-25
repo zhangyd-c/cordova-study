@@ -12,7 +12,17 @@
     },
     "cordova-hot-code-push-plugin": {
       "PACKAGE_NAME": "com.zyd.cordova"
+    },
+    "cordova-plugin-local-notification": {
+      "PACKAGE_NAME": "com.zyd.cordova"
     }
   },
-  "dependent_plugins": {}
+  "dependent_plugins": {
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.zyd.cordova"
+    },
+    "cordova-plugin-badge": {
+      "PACKAGE_NAME": "com.zyd.cordova"
+    }
+  }
 }
