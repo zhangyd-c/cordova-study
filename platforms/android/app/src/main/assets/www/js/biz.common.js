@@ -49,11 +49,11 @@ zyd.bindAutoUpdate = {
 };
 
 zyd.notification = {
+   look: false,
    init : function () {
        try {
-            var look = false;
             setInterval(function(){
-                if(!look){
+                if(!zyd.notification.look){
                     cordova.plugins.notification.local.schedule({
                         id: Math.random(),
                         title: '会议通知',
@@ -64,31 +64,31 @@ zyd.notification = {
                             { id: 'no',  title: '忽略' }
                         ]
                   });
-                  look = true;
-                  cordova.plugins.notification.local.on('yes', function (notification, eopts) {
-                      look = false;
-                      alert("消息详情：消息标题["+notification["title"]+"], 消息内容["+notification["text"]+"]")
-                      for(var i in eopts){
-                       console.log(i + "==" + eopts[i]);
-                      }
-                      for(var i in notification){
-                       console.log(i + "==" + notification[i]);
-                      }
-                  });
+                  zyd.notification.look = true;
+                  cordova.plugins.notification.local.un('yes', zyd.notification.success);
+                  cordova.plugins.notification.local.on('yes', zyd.notification.success);
 
-                  cordova.plugins.notification.local.on('no', function (notification, eopts) {
-                      look = false;
-                  });
-   //               cordova.plugins.notification.local.on('click', function(notification){
-   //                  look = false;
-   //                  alert(notification.data+",messageId:"+notification.data.meetingId);
-   //              });
+                  cordova.plugins.notification.local.un('no', zyd.notification.ignore);
+                  cordova.plugins.notification.local.on('no', zyd.notification.ignore);
                 }else{
-                    console.log("有未读的消息,暂不现实通知");
+                    console.log("有未读的消息,暂不显示通知");
                 }
             }, 5000);
        } catch (err) {
             alert("发生异常了。" + err);
        }
+   },
+   success: function(notification, eopts){
+          zyd.notification.look = false;
+          alert("消息详情：消息标题["+notification["title"]+"], 消息内容["+notification["text"]+"]")
+          for(var i in eopts){
+           console.log(i + "==" + eopts[i]);
+          }
+          for(var i in notification){
+           console.log(i + "==" + notification[i]);
+          }
+   },
+   ignore: function(notification, eopts){
+        zyd.notification.look = false;
    }
 };

@@ -43,9 +43,9 @@ cordova build android
 4. cordova-plugin-local-notification 0.9.0-beta.2 "LocalNotification" 本地通知
 5. cordova-plugin-badge 0.8.7 "Badge" 未读消息数徽章显示
 
-### 开源协议
-
-[MIT](https://gitee.com/yadong.zhang/DBlog/blob/master/LICENSE)
+### 图片效果预览
+cordova-plugin-local-notification应用示例
+![notification](http://cdn.zhyd.me/cordova-notification.gif)
 
 ### 生命不息，折腾不止！ 更多信息，请关注：
 1. [我的博客](https://www.zhyd.me)
@@ -57,3 +57,8 @@ cordova build android
 - [给我留言](https://www.zhyd.me/guestbook)
 
 ### 如果喜欢，请多多分享、多多Star
+
+
+### 开源协议
+
+[MIT](https://gitee.com/yadong.zhang/DBlog/blob/master/LICENSE)
