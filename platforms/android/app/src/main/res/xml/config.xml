@@ -21,7 +21,7 @@
     <chcp>
         <auto-download enabled="true" />
         <auto-install enabled="true" />
-        <config-file url="http://file.innodev.cn:8081/hot-update-app/zyd-test/chcp.json" />
+        <config-file url="http://xxx/hot-update-app/zyd-test/chcp.json" />
     </chcp>
     <feature name="Whitelist">
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />

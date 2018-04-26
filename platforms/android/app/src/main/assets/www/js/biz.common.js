@@ -50,7 +50,7 @@ zyd.bindAutoUpdate = {
 
 zyd.notification = {
    init : function () {
-       if (cordova.plugins && cordova.plugins.notification) {
+       try {
             var look = false;
             setInterval(function(){
                 if(!look){
@@ -67,8 +67,12 @@ zyd.notification = {
                   look = true;
                   cordova.plugins.notification.local.on('yes', function (notification, eopts) {
                       look = false;
+                      alert("消息详情：消息标题["+notification["title"]+"], 消息内容["+notification["text"]+"]")
                       for(var i in eopts){
                        console.log(i + "==" + eopts[i]);
+                      }
+                      for(var i in notification){
+                       console.log(i + "==" + notification[i]);
                       }
                   });
 
@@ -83,8 +87,8 @@ zyd.notification = {
                     console.log("有未读的消息,暂不现实通知");
                 }
             }, 5000);
-       } else{
-           alert("暂不支持notification");
+       } catch (err) {
+            alert("发生异常了。" + err);
        }
    }
 };

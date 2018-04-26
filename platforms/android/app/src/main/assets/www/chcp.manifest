@@ -41,11 +41,11 @@
   },
   {
     "file": "index.html",
-    "hash": "2ebd2714804362ac8ece15ab3d6ff20c"
+    "hash": "62a626e2b9ea53a72498bcadc76d4f46"
   },
   {
     "file": "js/biz.common.js",
-    "hash": "0f8077affbc7fc2f3fc69935f264d058"
+    "hash": "6011b4d6ab2cc074185c2e92d79aeb4e"
   },
   {
     "file": "js/index.js",
@@ -77,10 +77,10 @@
   },
   {
     "file": "tpl/chcp.html",
-    "hash": "357a01e1a2d1f4294e851e6df356c682"
+    "hash": "5dca4474964ea9264f24ebe7363f8d00"
   },
   {
     "file": "tpl/notification.html",
-    "hash": "5ea0694978462d74ef3a262c2cd8ec70"
+    "hash": "68ed42fcedac1e7a6e68b4d7bee1b61e"
   }
 ]
