@@ -38,5 +38,53 @@
     },
     "is_top_level": false,
     "variables": {}
+  },
+  "com.lampa.startapp": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/lampaa/com.lampa.startapp.git"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-appavailability": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-appavailability"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-inappbrowser": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-inappbrowser@3.0.0"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-file-transfer": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-file-transfer"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-file": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-file@>=5.0.0"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "cordova-plugin-file-opener2": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/pwlin/cordova-plugin-file-opener2.git"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

@@ -1,0 +1,75 @@
+{
+  "_from": "cordova-plugin-appavailability",
+  "_id": "cordova-plugin-appavailability@0.4.2",
+  "_inBundle": false,
+  "_integrity": "sha1-oBeq8PiCfuWZ3HeLYkXcwTULy6g=",
+  "_location": "/cordova-plugin-appavailability",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-appavailability",
+    "name": "cordova-plugin-appavailability",
+    "escapedName": "cordova-plugin-appavailability",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://r.cnpmjs.org/cordova-plugin-appavailability/download/cordova-plugin-appavailability-0.4.2.tgz",
+  "_shasum": "a017aaf0f8827ee599dc778b6245dcc1350bcba8",
+  "_spec": "cordova-plugin-appavailability",
+  "_where": "D:\\zhyd-project\\app\\cordova-study",
+  "author": {
+    "name": "ohh2ahh"
+  },
+  "bugs": {
+    "url": "https://github.com/ohh2ahh/AppAvailability/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-appavailability",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "This plugin for Cordova and PhoneGap allows you to check if an app is installed. It requires an URI Scheme (iOS) or a Package Name (Android).",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "homepage": "https://github.com/ohh2ahh/AppAvailability#readme",
+  "keywords": [
+    "Cordova",
+    "PhoneGap",
+    "plugin",
+    "app",
+    "availability",
+    "installed",
+    "URIScheme",
+    "URI",
+    "Scheme",
+    "PackageName",
+    "Package",
+    "Name",
+    "iOS",
+    "Android",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-appavailability",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohh2ahh/AppAvailability.git"
+  },
+  "version": "0.4.2"
+}

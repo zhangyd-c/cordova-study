@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>Cordova学习-打开第三方app</title>
+    <link rel="stylesheet" href="../css/custom.css">
+    <!--Inject JS  -->
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <!--for cordova package app-->
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="../js/biz.common.js"></script>
+</head>
+
+<body class="android">
+    <img src="../img/logo.png" alt="" width="200px" style="margin: 0 auto;"><br>
+    <strong><a href="../index.html">返回</a></strong>
+    <button type="button" class="openApp" data-scheme="com.baidu.BaiduMap" data-activity="com.baidu.baidumaps.WelcomeScreen" data-title="百度地图">打开百度地图</button>
+    <button type="button" class="openApp" data-scheme="com.yadongzhang.owp" data-activity="com.uzmap.pkg.EntranceActivity" data-title="DBlog"
+            data-download-url="http://downloadpkg.apicloud.com/app/download?path=http://7zmssi.com1.z0.glb.clouddn.com/b3bf6ca124fb52aa2d51350262313c9d_d">DBlog</button>
+
+    <div style="position: fixed;width: 100%;height: 20px;bottom: 0;"><div id="progress" style="width: 0%;height: 20px;background: red;"></div></div>
+    <script type="text/javascript">
+        zyd.openApp.init();
+    </script>
+</body>
+</html>

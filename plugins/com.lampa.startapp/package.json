@@ -1,0 +1,57 @@
+{
+  "_from": "git+https://github.com/lampaa/com.lampa.startapp.git",
+  "_id": "com.lampa.startapp@6.1.6",
+  "_inBundle": false,
+  "_location": "/com.lampa.startapp",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/lampaa/com.lampa.startapp.git",
+    "rawSpec": "https://github.com/lampaa/com.lampa.startapp.git",
+    "saveSpec": "git+https://github.com/lampaa/com.lampa.startapp.git",
+    "fetchSpec": "https://github.com/lampaa/com.lampa.startapp.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/lampaa/com.lampa.startapp.git#9537dc98160cfdae6c5c931d098fa401e86d811d",
+  "_spec": "https://github.com/lampaa/com.lampa.startapp.git",
+  "_where": "D:\\zhyd-project\\app\\cordova-study",
+  "author": {
+    "name": "lampaa"
+  },
+  "bugs": {
+    "url": "https://github.com/lampaa/com.lampa.startapp/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "com.lampa.startapp",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Phonegap plugin for check or launch other application in android device.",
+  "homepage": "https://github.com/lampaa/com.lampa.startapp#readme",
+  "keywords": [
+    "cordova",
+    "startapp",
+    "lampa",
+    "extra",
+    "extrafields",
+    "hasextra",
+    "cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "name": "com.lampa.startapp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lampaa/com.lampa.startapp.git"
+  },
+  "version": "6.1.6"
+}

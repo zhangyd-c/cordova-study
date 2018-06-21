@@ -26,4 +26,9 @@
     <engine name="android" spec="^7.0.0" />
     <plugin name="cordova-hot-code-push-plugin" spec="cordova-hot-code-push-plugin" />
     <plugin name="cordova-plugin-local-notification" spec="cordova-plugin-local-notification" />
+    <plugin name="com.lampa.startapp" spec="https://github.com/lampaa/com.lampa.startapp.git" />
+    <plugin name="cordova-plugin-appavailability" spec="^0.4.2" />
+    <plugin name="cordova-plugin-inappbrowser" spec="^3.0.0" />
+    <plugin name="cordova-plugin-file-transfer" spec="^1.7.1" />
+    <plugin name="cordova-plugin-file-opener2" spec="https://github.com/pwlin/cordova-plugin-file-opener2.git" />
 </widget>

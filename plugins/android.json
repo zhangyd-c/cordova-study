@@ -15,6 +15,21 @@
     },
     "cordova-plugin-local-notification": {
       "PACKAGE_NAME": "com.zyd.cordova"
+    },
+    "com.lampa.startapp": {
+      "PACKAGE_NAME": "com.zyd.cordova"
+    },
+    "cordova-plugin-appavailability": {
+      "PACKAGE_NAME": "com.zyd.cordova"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.zyd.cordova"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.zyd.cordova"
+    },
+    "cordova-plugin-file-opener2": {
+      "PACKAGE_NAME": "com.zyd.cordova"
     }
   },
   "dependent_plugins": {
@@ -22,6 +37,9 @@
       "PACKAGE_NAME": "com.zyd.cordova"
     },
     "cordova-plugin-badge": {
+      "PACKAGE_NAME": "com.zyd.cordova"
+    },
+    "cordova-plugin-file": {
       "PACKAGE_NAME": "com.zyd.cordova"
     }
   }

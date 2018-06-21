@@ -42,10 +42,12 @@ cordova build android
 3. cordova-plugin-device 2.0.2 "Device"  获取设备信息
 4. cordova-plugin-local-notification 0.9.0-beta.2 "LocalNotification" 本地通知
 5. cordova-plugin-badge 0.8.7 "Badge" 未读消息数徽章显示
-
-### 图片效果预览
-cordova-plugin-local-notification应用示例
-![notification](http://cdn.zhyd.me/cordova-notification.gif)
+6. cordova-plugin-appavailability 0.4.2 "AppAvailability" 检测第三方app是否存在
+7. cordova-plugin-file 6.0.1 "File"  文件操作相关
+8. cordova-plugin-file-opener2 2.0.19 "File Opener2" 文件打开
+9. cordova-plugin-file-transfer 1.7.1 "File Transfer" 文件下载
+10. cordova-plugin-inappbrowser 3.0.0 "InAppBrowser"  应用内置浏览器
+11. com.lampa.startapp 6.1.6 "startApp" 打开第三方app
 
 ### 生命不息，折腾不止！ 更多信息，请关注：
 1. [我的博客](https://www.zhyd.me)
